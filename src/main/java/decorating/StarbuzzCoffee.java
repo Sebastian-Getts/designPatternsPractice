@@ -6,19 +6,19 @@ package decorating;
  */
 public class StarbuzzCoffee {
     public static void main(String[] args) {
-        Beverage beverage = new Espresso();
-        System.out.println(beverage.getDescription() + " $" + beverage.cost());
+        BaseBeverage baseBeverage = new Espresso();
+        System.out.println(baseBeverage.getDescription() + " $" + baseBeverage.cost());
 
-        Beverage beverage1 = new DarRoast();
-        beverage1 = new Mocha(beverage1);
-        beverage1 = new Mocha(beverage1);
-        beverage1 = new Whip(beverage1);
-        System.out.println(beverage1.getDescription() + " $" + beverage1.cost());
+        BaseBeverage baseBeverage1 = new DarRoast();
+        baseBeverage1 = new Mocha(baseBeverage1);
+        baseBeverage1 = new Mocha(baseBeverage1);
+        baseBeverage1 = new Whip(baseBeverage1);
+        System.out.println(baseBeverage1.getDescription() + " $" + baseBeverage1.cost());
 
-        Beverage beverage2 = new HouseBlend();
-        beverage2 = new Soy(beverage2);
-        beverage2 = new Mocha(beverage2);
-        beverage2 = new Whip(beverage2);
-        System.out.println(beverage2.getDescription() + " $" + beverage2.cost());
+        BaseBeverage baseBeverage2 = new HouseBlend();
+        baseBeverage2 = new Soy(baseBeverage2);
+        baseBeverage2 = new Mocha(baseBeverage2);
+        baseBeverage2 = new Whip(baseBeverage2);
+        System.out.println(baseBeverage2.getDescription() + " $" + baseBeverage2.cost());
     }
 }

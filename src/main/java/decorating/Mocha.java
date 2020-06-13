@@ -4,20 +4,25 @@ package decorating;
  * @author sebastian
  * @date 6/12/20 6:52 PM
  */
-public class Mocha extends Condiment {
-    Beverage beverage;
+public class Mocha extends BaseCondiment {
+    private static final String NAME = "Mocha";
 
-    public Mocha(Beverage beverage) {
-        this.beverage = beverage;
+    /**
+     * delegate object
+     */
+    BaseBeverage baseBeverage;
+
+    public Mocha(BaseBeverage baseBeverage) {
+        this.baseBeverage = baseBeverage;
     }
 
     @Override
     public String getDescription() {
-        return beverage.getDescription() + ", Mocha";
+        return baseBeverage.getDescription() + ", " + NAME;
     }
 
     @Override
     public double cost() {
-        return .20 + beverage.cost();
+        return .20 + baseBeverage.cost();
     }
 }

@@ -1,6 +1,8 @@
 package observer;
 
 /**
+ * 观察者，所有的观察者应实现这一接口
+ *
  * @author sebastian
  * @date 6/12/20 3:46 PM
  */
