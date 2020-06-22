@@ -10,7 +10,7 @@ package observer;
 public interface Subject {
 
     /**
-     * 注册为观察者
+     * 注册为观察者，“注册”方法中强制要求传入观察者的实例
      *
      * @param observer an Observer instance
      */

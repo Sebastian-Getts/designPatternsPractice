@@ -7,6 +7,9 @@ package singleton;
 public class Single {
     private volatile static Single uniqueInstance;
 
+    /**
+     * 构造函数私有，只能在类内部调用
+     */
     private Single() {
     }
 
@@ -14,6 +17,12 @@ public class Single {
         System.out.println("I wanna drink a glass of juice...");
     }
 
+    /**
+     * 静态方法
+     * 双重判断
+     *
+     * @return Single instance
+     */
     public static Single getInstance() {
         if (uniqueInstance == null) {
             synchronized (Single.class) {
