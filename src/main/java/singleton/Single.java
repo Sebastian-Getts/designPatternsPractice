@@ -5,6 +5,9 @@ package singleton;
  * @date 6/14/20 9:54 PM
  */
 public class Single {
+    /**
+     * 静态初始化，volatile保证线程可见，提高锁效率
+     */
     private volatile static Single uniqueInstance;
 
     /**
