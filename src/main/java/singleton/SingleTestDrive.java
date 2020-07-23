@@ -8,5 +8,8 @@ public class SingleTestDrive {
 
     public static void main(String[] args) {
         System.out.println(Single.getInstance() == Single.getInstance());
+        System.out.println("=============================");
+        System.out.println(Single2.getInstance() == Single2.getInstance());
+        Single2.getInstance().sing();
     }
 }
