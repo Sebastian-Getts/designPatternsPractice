@@ -6,3 +6,4 @@ practice common design patterns reference from _Head First Design Patterns_
 - Singleton
 - Iterator
 - Adapter and Facade
+- Template method
