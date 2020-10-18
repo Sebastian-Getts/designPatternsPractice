@@ -1,6 +1,5 @@
 package proxy.high;
 
-import sun.rmi.runtime.Log;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

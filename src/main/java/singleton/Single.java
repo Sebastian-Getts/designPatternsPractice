@@ -28,6 +28,7 @@ public class Single {
      */
     public static Single getInstance() {
         if (uniqueInstance == null) {
+            // 只有第一次才彻底执行这里的代码块
             synchronized (Single.class) {
                 if (uniqueInstance == null) {
                     uniqueInstance = new Single();

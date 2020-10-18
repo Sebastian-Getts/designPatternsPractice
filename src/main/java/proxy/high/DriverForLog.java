@@ -19,8 +19,7 @@ public class DriverForLog {
         // 获取所有接口对应的Class，这里的UserServiceImpl只实现了一个接口
         Class<?>[] interfaces = userService.getClass().getInterfaces();
 
-        // LogHandler实现了InvocationHandler接口，代理的是Object，此处传入的是Use
-        // rService
+        // LogHandler实现了InvocationHandler接口，代理的是Object，此处传入的是UserService
         LogHandler logHandler = new LogHandler(userService);
         // 创建代理对象
         UserService invocationHandler = (UserService) Proxy.newProxyInstance(classLoader, interfaces, logHandler);
