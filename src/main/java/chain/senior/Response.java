@@ -1,12 +1,17 @@
 package chain.senior;
 
-import lombok.Data;
-
 /**
  * @author sebastian
  * @date 2020/10/18
  */
-@Data
 public class Response {
     private String responseStr;
+
+    public String getResponseStr() {
+        return responseStr;
+    }
+
+    public void setResponseStr(String responseStr) {
+        this.responseStr = responseStr;
+    }
 }

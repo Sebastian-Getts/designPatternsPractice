@@ -1,12 +1,9 @@
 package chain.primary;
 
-import lombok.Data;
-
 /**
  * @author sebastian
  * @date 2020/10/18
  */
-@Data
 public class MsgChain {
     private String msg;
     private Filter[] filters = {new HtmlFilter(), new WordFilter(), new FaceFilter()};
@@ -16,5 +13,13 @@ public class MsgChain {
             msg = filter.doFilter(msg);
         }
         return msg;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 }
