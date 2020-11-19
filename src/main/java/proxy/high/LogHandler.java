@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  * @author sebastian
  * @date 2020/9/12
  */
-public class LogHandler implements InvocationHandler {
+public class    LogHandler implements InvocationHandler {
     /**
      * 被代理的对象，实际方法的执行者
      */
