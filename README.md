@@ -11,3 +11,4 @@ practice common design patterns reference from _Head First Design Patterns_
 - Chain of Responsibility (Reference [here](https://www.cnblogs.com/tanshaoshenghao/p/10741160.html))
 - Visitor
 - State
+- Strategy

@@ -6,7 +6,7 @@ package chain.primary;
  */
 public class MsgChain {
     private String msg;
-    private Filter[] filters = {new HtmlFilter(), new WordFilter(), new FaceFilter()};
+    private final Filter[] filters = {new HtmlFilter(), new WordFilter(), new FaceFilter()};
 
     public String process() {
         for (Filter filter : filters) {

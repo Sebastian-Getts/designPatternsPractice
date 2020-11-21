@@ -8,7 +8,7 @@ import java.util.List;
  * @date 2020/10/18
  */
 public class FilterChain implements Filter {
-    private List<Filter> list = new ArrayList<>();
+    private final List<Filter> list = new ArrayList<>();
 
     private int index = 0;
 
